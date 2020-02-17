@@ -7,8 +7,32 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/server.js"
+            "name": "yarn build",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": [
+                "build"
+            ],
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "yarn watch",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": [
+                "watch"
+            ],
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "yarn compile",
+            "runtimeExecutable": "yarn",
+            "runtimeArgs": [
+                "compile"
+            ],
+            "cwd": "${workspaceRoot}"
         }
     ]
 }

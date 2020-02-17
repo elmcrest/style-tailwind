@@ -4,8 +4,8 @@
   "description": "Tailwind CSS build environment in a devcontainer.",
   "author": "Marius Räsener <marius@raesener.de>",
   "scripts": {
-    "build": "postcss CSS/tailwind.css -o out/build/tailwind.css",
-    "watch": "postcss CSS/tailwind.css -o out/build/tailwind.css --watch",
+    "build": "NODE_ENV='' postcss CSS/tailwind.css -o out/build/tailwind.css",
+    "watch": "NODE_ENV='' postcss CSS/tailwind.css -o out/build/tailwind.css --watch",
     "compile": "NODE_ENV='production' postcss CSS/tailwind.css -o out/build/tailwind.css"
   },
   "dependencies": {
